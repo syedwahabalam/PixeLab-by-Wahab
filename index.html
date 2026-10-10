@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EPixeLab — Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Roboto+Condensed:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "DM Sans", sans-serif;
+        color: #101e37;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .heading {
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 500;
+        color: #33435b;
+      }
+      .service {
+        box-shadow: 0 26px 32px -17px #0004;
+      }
+      .orange {
+        background: #ff6900;
+      }
+      .eyebrow {
+        letter-spacing: 0.42em;
+        color: #a5aab7;
+        font-size: 11px;
+      }
+      .nav-link {
+        font-size: 16px;
+        font-weight: 700;
+        transition:
+          font-size 0.15s ease,
+          font-weight 0.15s ease;
+      }
+      .nav-link[aria-current="page"] {
+        font-size: 13px;
+        font-weight: 400;
+      }
+      .nav-link:focus-visible {
+        outline: 2px solid #ff6900;
+        outline-offset: 4px;
+      }
+      .container-custom {
+        max-width: 1180px;
+        margin-inline: auto;
+        padding-inline: 24px;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <header
+      class="container-custom flex items-center justify-between gap-4 py-9"
+      id="home"
+    >
+      <a href="#home"
+        ><img src="assets/Logo.png" class="w-[185px]" alt="EPixeLab"
+      /></a>
+      <nav
+        class="hidden lg:flex items-center gap-8 text-xs font-bold"
+        aria-label="Main navigation"
+      >
+        <a class="nav-link" href="#home" aria-current="page">Home</a>
+        <a class="nav-link" href="#about">About Us</a>
+        <a class="nav-link" href="#services">Our App</a>
+        <a class="nav-link" href="#contact">Contacts</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-5 text-xs font-bold">
+        <a href="#contact">Log In</a
+        ><a class="orange rounded-lg px-6 py-3 text-white" href="#contact"
+          >Sign Up</a
+        >
+      </div>
+      <button
+        id="toggle"
+        class="lg:hidden text-2xl"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+    </header>
+    <nav
+      id="mobile"
+      class="container-custom hidden pb-5 lg:hidden space-y-3"
+      aria-label="Mobile navigation"
+    >
+      <a class="nav-link block" href="#home" aria-current="page">Home</a>
+      <a class="nav-link block" href="#about">About Us</a>
+      <a class="nav-link block" href="#services">Our App</a>
+      <a class="nav-link block" href="#contact">Contacts</a>
+    </nav>
+    <main>
+      <section
+        class="container-custom grid md:grid-cols-2 items-center gap-4 pt-8 pb-24 md:pb-28"
+      >
+        <div class="relative z-10">
+          <h1
+            class="font-black text-[44px] sm:text-[60px] lg:text-[69px] leading-[1.05] tracking-[-.05em] max-w-[610px]"
+          >
+            We boost<br />growth for your<br />startup business
+          </h1>
+          <p class="mt-8 max-w-[465px] text-base font-medium leading-6">
+            Our goal is to be at the heart of creativity services industry as a
+            digital creator. In has a after comment
+          </p>
+          <div class="mt-8 flex items-center gap-6">
+            <a
+              class="orange text-white text-xs font-bold px-8 py-4 rounded-lg"
+              href="#contact"
+              >Get Started</a
+            ><a
+              href="#about"
+              class="flex items-center gap-3 text-xs font-medium"
+              ><img src="assets/Learn More icon.png" class="w-10" alt="" />Learn
+              More</a
+            >
+          </div>
+        </div>
+        <img
+          class="w-full max-w-[590px]"
+          src="assets/Group 32.png"
+          alt="Man using a phone with growth indicators"
+        />
+      </section>
+      <section id="services" class="container-custom pb-28">
+        <div class="text-center">
+          <p class="eyebrow">SERVICE</p>
+          <h2 class="heading text-4xl mt-3">Our Vision &amp; Our Goal</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-24">
+          <article
+            class="service rounded-2xl text-center px-9 py-10 flex flex-col items-center"
+          >
+            <div class="text-5xl text-black font-black">🎨</div>
+            <h3 class="heading text-3xl mt-7 whitespace-normal lg:whitespace-nowrap">Graphic Design</h3>
+            <p class="text-sm leading-6 mt-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              dui mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus
+              laoreet dolor nec imperdiet.
+            </p>
+            <a
+              class="orange text-white text-xs px-10 py-3 rounded-lg mt-9"
+              href="#contact"
+              >Learn</a
+            >
+          </article>
+          <article
+            class="service rounded-2xl text-center px-9 py-10 flex flex-col items-center"
+          >
+            <div class="text-5xl text-black font-black">🎬</div>
+            <h3 class="heading text-3xl mt-7 whitespace-normal lg:whitespace-nowrap">Video Editing</h3>
+            <p class="text-sm leading-6 mt-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              dui mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus
+              laoreet dolor nec imperdiet.
+            </p>
+            <a
+              class="orange text-white text-xs px-10 py-3 rounded-lg mt-9"
+              href="#contact"
+              >Learn</a
+            >
+          </article>
+          <article
+            class="service rounded-2xl text-center px-9 py-10 flex flex-col items-center"
+          >
+            <div class="text-5xl text-black font-black">📊</div>
+            <h3 class="heading text-3xl mt-7 whitespace-normal lg:whitespace-nowrap">Digital Marketing</h3>
+            <p class="text-sm leading-6 mt-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              dui mi, bibendum eu erat id, ultricies semper metus. Nunc dapibus
+              laoreet dolor nec imperdiet.
+            </p>
+            <a
+              class="orange text-white text-xs px-10 py-3 rounded-lg mt-9"
+              href="#contact"
+              >Learn</a
+            >
+          </article>
+        </div>
+      </section>
+      <section
+        id="about"
+        class="container-custom grid md:grid-cols-[.75fr_1.25fr] items-center gap-16 py-20"
+      >
+        <div>
+          <h3 class="font-bold text-[#28226c] text-lg">
+            Many Blocks and<br />Components
+          </h3>
+          <p class="text-slate-400 text-sm mt-9 max-w-xs leading-7">
+            Startup Framework contains components and complex blocks which can
+            easily be integrated into almost any design.
+          </p>
+          <a
+            href="#contact"
+            class="inline-block border rounded-full text-xs text-[#28226c] px-8 py-3 mt-20"
+            >Explore</a
+          >
+        </div>
+        <img
+          src="assets/Video Player.png"
+          alt="Colorful pink chair"
+          class="w-full rounded-lg"
+        />
+      </section>
+      <section class="container-custom py-32">
+        <div class="text-center">
+          <p class="eyebrow">TESTIMONIALS</p>
+          <h2 class="heading text-4xl mt-3">What Clients say about us</h2>
+        </div>
+        <div
+          class="grid md:grid-cols-2 gap-x-24 gap-y-20 max-w-[900px] mx-auto mt-24"
+        >
+          <div class="flex gap-6">
+            <div
+              class="shrink-0 w-14 h-14 rounded-lg bg-slate-200 overflow-hidden"
+            >
+              <img
+                src="assets/User Mask 1.png"
+                alt="Client"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <p class="text-sm leading-6 font-medium">
+                Get a fully retina ready site when you build with Startup
+                Framework. Websites look sharper and more gorgeous on devices
+                with retina display support
+              </p>
+              <p class="eyebrow mt-5 !tracking-[.18em]">RAYHAN CURRAN</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div
+              class="shrink-0 w-14 h-14 rounded-lg bg-violet-100 grid place-items-center text-xl"
+            >
+              <img
+                src="assets/User Mask 2.png"
+                alt="Client"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <p class="text-sm leading-6 font-medium">
+                As a business targeting high net worth individuals, we were
+                looking for a slick, cool and mini-malistic design for our
+                website
+              </p>
+              <p class="eyebrow mt-5 !tracking-[.18em]">KAYLEY FRAME</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div
+              class="shrink-0 w-14 h-14 rounded-lg bg-orange-100 grid place-items-center text-xl"
+            >
+              <img
+                src="assets/User Mask 3.png"
+                alt="Client"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <p class="text-sm leading-6 font-medium">
+                The most important part of the Startup Framework is the samples
+              </p>
+              <p class="eyebrow mt-5 !tracking-[.18em]">GENE WHITFIELD</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div
+              class="shrink-0 w-14 h-14 rounded-lg bg-blue-100 grid place-items-center text-xl"
+            >
+              <img
+                src="assets/User Mask 4.png"
+                alt="Client"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <p class="text-sm leading-6 font-medium">
+                I've built my website with Startup just in one day, and it was
+                ready-to-go.
+              </p>
+              <p class="eyebrow mt-5 !tracking-[.18em]">ALLAN KIM</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-custom py-24">
+        <div class="text-center">
+          <p class="eyebrow">OUR TEAM</p>
+          <h2 class="heading text-4xl mt-3">Meet The Team</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-7 mt-16">
+          <article class="border border-slate-200 rounded-lg text-center pt-12">
+            <img
+              src="assets/Vanessa Laird.png"
+              alt="Vanessa Laird"
+              class="w-24 h-24 object-cover rounded-full mx-auto"
+            />
+            <h3 class="font-bold text-[#28226c] mt-6">Vanessa Laird</h3>
+            <p class="eyebrow !tracking-[.16em] mt-3">UI DESIGNER</p>
+            <div class="grid grid-cols-3 border-t mt-10 h-14">
+              <span class="border-r"></span><span class="border-r"></span
+              ><span></span>
+            </div>
+          </article>
+          <article class="border border-slate-200 rounded-lg text-center pt-12">
+            <img
+              src="assets/Mason Campbell.png"
+              alt="Vanessa Laird"
+              class="w-24 h-24 object-cover rounded-full mx-auto"
+            />
+            <h3 class="font-bold text-[#28226c] mt-6">Mason Campbell</h3>
+            <p class="eyebrow !tracking-[.16em] mt-3">UI DESIGNER</p>
+            <div class="grid grid-cols-3 border-t mt-10 h-14">
+              <span class="border-r"></span><span class="border-r"></span
+              ><span></span>
+            </div>
+          </article>
+          <article class="border border-slate-200 rounded-lg text-center pt-12">
+            <img
+              src="assets/Irea Evans.png"
+              alt="Vanessa Laird"
+              class="w-24 h-24 object-cover rounded-full mx-auto"
+            />
+            <h3 class="font-bold text-[#28226c] mt-6">Irea Evans</h3>
+            <p class="eyebrow !tracking-[.16em] mt-3">CLIENT MANAGER</p>
+            <div class="grid grid-cols-3 border-t mt-10 h-14">
+              <span class="border-r"></span><span class="border-r"></span
+              ><span></span>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="contact" class="container-custom py-28">
+        <div class="text-center">
+          <p class="eyebrow">OUR TEAM</p>
+          <h2 class="heading text-4xl mt-3">Subscribe Our Newsletter</h2>
+        </div>
+        <div class="grid md:grid-cols-[.7fr_1.3fr] items-center gap-16 mt-20">
+          <div class="relative mx-auto w-56 h-48">
+            <div
+              class="absolute inset-x-4 bottom-1 h-32 bg-[#ff6900] rounded-[28px] shadow-xl"
+            ></div>
+            <div
+              class="absolute left-9 top-0 w-40 h-36 bg-slate-100 rounded-xl shadow-md flex flex-col gap-4 p-9"
+            >
+              <span class="h-2 rounded bg-orange-300"></span
+              ><span class="h-2 rounded bg-orange-300"></span
+              ><span class="h-2 rounded bg-orange-300"></span>
+            </div>
+            <div
+              class="absolute bottom-1 left-4 right-4 h-20 bg-gradient-to-t from-orange-600 to-orange-400 rounded-b-[28px] [clip-path:polygon(0_0,50%_70%,100%_0,100%_100%,0_100%)]"
+            ></div>
+          </div>
+          <div>
+            <p class="text-sm leading-7">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </p>
+            <form id="subscribe" class="mt-9">
+              <label class="sr-only" for="email">Email address</label
+              ><input
+                id="email"
+                type="email"
+                required
+                placeholder="Your E-mail here..."
+                class="w-full rounded-full border border-slate-200 shadow-lg px-10 py-5 text-sm outline-none focus:border-orange-500"
+              /><button
+                type="submit"
+                class="orange w-full text-white text-sm font-bold rounded-lg py-4 mt-7"
+              >
+                Subscribe Our Newsletter
+              </button>
+              <p
+                id="status"
+                aria-live="polite"
+                class="text-sm mt-3 text-slate-500"
+              ></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container-custom pt-20 pb-12">
+      <div
+        class="flex flex-col md:flex-row items-center justify-between gap-6 text-xs"
+      >
+        <img src="assets/Logo.png" class="w-28" alt="EPixeLab" />
+        <p class="text-[#28226c]">© 2020 Epixelab. All rights reserved.</p>
+        <nav class="flex flex-wrap justify-center gap-6 text-[#28226c]">
+          <a href="#about">Portfolio</a><a href="#services">How It Works</a
+          ><a href="#services">Pricing</a><a href="#about">About</a
+          ><a href="#contact">Login</a>
+        </nav>
+      </div>
+      <p class="border-t mt-9 pt-9 text-xs text-slate-400">
+        Startup Framework contains components and complex blocks which can
+        easily be integrated into almost any design.
+      </p>
+    </footer>
+    <script>
+      // Keep the selected link smaller and lighter in both menus.
+      document.querySelectorAll("a.nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          document.querySelectorAll("a.nav-link").forEach((item) => {
+            if (item.getAttribute("href") === link.getAttribute("href")) {
+              item.setAttribute("aria-current", "page");
+            } else {
+              item.removeAttribute("aria-current");
+            }
+          });
+        });
+      });
+
+      // Mobile menu toggle
+      const toggle = document.querySelector("#toggle");
+      const mobile = document.querySelector("#mobile");
+
+      toggle.addEventListener("click", () => {
+        mobile.classList.toggle("hidden");
+
+        toggle.setAttribute(
+          "aria-expanded",
+          String(!mobile.classList.contains("hidden")),
+        );
+      });
+    </script>
+  </body>
+</html>
